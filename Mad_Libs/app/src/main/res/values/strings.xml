@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mad_Libs</string>
+    <string name="givenText">A vacation is when you take a trip to some %1$s place with your %2$s family. Usually, you go to someplace that\'s near a %3$s  or up on a %4$s. A good vacation place is one where you can ride %5$s or play %6$s.</string>
+</resources>
