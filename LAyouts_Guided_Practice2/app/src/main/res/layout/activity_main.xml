@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- THIS IS THE FIRST PRACTICE PROB
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.davidstone.layouts_guided_practice.MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView1"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="BUTTON1"
+        />
+    <Button
+        android:id="@+id/centertopbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="BUTTON3"/>
+    <TextView
+        android:id="@+id/centermidtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/centertopbutton"
+        android:text="TextView1"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/rightnearcentertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView2"
+        android:textSize="25sp"
+        android:layout_toRightOf="@id/centermidtextview"
+        android:layout_alignTop="@id/centermidtextview"
+        android:layout_alignParentRight="true"
+
+        />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUTTON2"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout> -->
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.example.davidstone.layouts_guided_practice.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.davidstone.layouts_guided_practice.MainActivity">
+
+        <ImageView
+            android:id="@+id/androidicon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"
+            android:src="@android:drawable/sym_def_app_icon"/>
+
+        <ImageView
+            android:id="@+id/playbutton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@android:drawable/ic_media_play"
+
+            />
+
+    </FrameLayout>
+
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:layout_below="@id/frame"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headline"
+            android:text="This Is The Headline"
+            android:layout_below="@id/border"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/vicesports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VICE SPORTS"
+            android:layout_below="@id/headline"
+
+            />
+
+    <TextView
+        android:id="@+id/textbody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is the text body"
+        android:layout_below="@id/vicesports"
+
+        />
+
+    <!--
+   //Alan did this with a linear layout because it's just from top
+    down
+
+    play button he got with an imageview (drawable/ic/media_play
+    and a textview with the seconds played
+
+    made a view to make the yellow border under the frame
+    -->
+
+</RelativeLayout>
+

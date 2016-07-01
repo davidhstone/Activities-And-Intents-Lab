@@ -70,6 +70,6 @@ public class PickWordsMain extends AppCompatActivity {
                 startActivity(intent);
             }
     };
-
+        submit.setOnClickListener(clickSubmit);
     }
 }
